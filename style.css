@@ -1,0 +1,20 @@
+body{
+    background: #f6f1ef;
+}
+
+#logo{
+    border: none;
+    margin: 0%;
+    margin-right: 3%;
+    float: left;
+}
+
+#aside{
+    float: right;
+    height: 500px;
+    width: 300px;
+}
+
+.google_fonts{
+    font-family: 'Noto Sans', sans-serif;
+}
