@@ -23,9 +23,9 @@ a:active{
     float: left;
     position: absolute;
     height: 50px;
-    width: 75px;
+    width: 70px;
     left: 107px;
-    
+    top: 5px;
 }
 main{
     margin-top: 10px;
@@ -33,7 +33,7 @@ main{
 
 header{
     position:sticky;
-	top: 0;
+	top: 1%;
     background: #f6f1ef;
 }
 
@@ -96,7 +96,7 @@ article{
     font-family:'Times New Roman', Times, serif;
     padding: 1%;
     margin: 1%;
-    display: block;
+    display: run-in;
 }
 
 .google_fonts{
