@@ -1,0 +1,105 @@
+/* ------------ gallery begin ------------ */
+.gallery-hover-content {
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex:0 0 100%;
+}
+
+.gallery-hover-content{
+    padding-left: 15%;
+    
+}
+.gallery-hover-content-description{
+    font-size: 0.5em;
+}
+.gallery-hover-content-button{
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    border: #c8c7c7;
+    font-size: 0.5em;
+    color: rgb(0, 0, 0);
+    border: .25vh solid #161616;
+    padding: 0.1em 0.75em;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-hover-content-button:hover{
+    background: rgba(255, 255, 255, 1);
+    transition: all ease .5s;
+}
+
+
+.title__gallery {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-size: 0;
+}
+.gallery-item {
+    display: block;
+    flex: 25%;
+    overflow: hidden;
+    position: relative;
+}
+.gallery-item img {
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    transition: all .5s ease;
+    z-index: -1;
+}
+
+.gallery-item-hover{
+    background: linear-gradient(to top, #000000 -25%, transparent);
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    opacity: 0;
+}
+
+.gallery-item:hover .gallery-item-hover{
+    opacity: 1;
+    z-index: 2;
+}
+
+@media screen and (max-width: 720px) {
+    .gallery-item{
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 710px) {
+    .gallery-item{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1000px) {
+    .gallery-item{
+        flex: 33.3%;
+        
+    }
+}
+/* ------------ gallery end ------------ */

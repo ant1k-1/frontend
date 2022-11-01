@@ -1,0 +1,179 @@
+/* ------------ registration-form begin ------------ */
+.sigh-up-form input::placeholder{
+    color: #8b8b8d;
+    font-style: italic;
+    padding: 3%;
+    font-size: 20px;
+}
+.sigh-up-form .my-input{
+    background: hsl(195, 64%, 91%);
+    font-size: 20px;
+}
+
+
+.sigh-up-form input:focus{
+    background: #fafdff;
+}
+
+.login_form label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login_form input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 20px;
+    padding: 10 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.login_form button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login_form  h1{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+}
+
+.login_form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.login_form *{
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.sigh-up-form {
+    background-color: #080710;
+    height: 800px;
+    width: 100%;
+}
+
+.sign-help{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -30px;
+}
+.sign-help-div{
+    display: flex;
+    flex-direction: column;
+    
+}
+.sign-help a{
+    color: orange;
+    margin-left: 3%;
+}
+.sign-help p{
+    color: #ffffff;
+}
+
+@keyframes squares
+{
+    0%, 100%
+    {
+        transform: translateY(10px);
+    }
+    
+    50%
+    {
+        transform: translate(-10px);
+    }
+}
+
+.sigh-up-form span
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.sigh-up-form 
+.square1::before, .square1::after, 
+.square2::before, .square2::after
+{
+    content:'';
+    position: absolute;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    transition: 0.1s;  
+    animation: squares 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+}
+
+.sigh-up-form:hover .square1::before
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.sigh-up-form:hover .square1::after
+{
+    top: 235px;
+    left: 160px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.sigh-up-form:hover .square2::before
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.sigh-up-form:hover .square2::after
+{
+    top: 300px;
+    left: 160px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+/* ------------ registration-form end ------------ */

@@ -1,0 +1,28 @@
+/* ------------ registration-form begin ------------ */
+input::placeholder{
+    color: #8b8b8d;
+    font-style: italic;
+}
+.sigh-up-form input{
+    background: hsl(195, 64%, 91%);
+    float:right;
+}
+.sigh-up-form input:focus{
+    background: #fafdff;
+}
+
+.sigh-up-form form{
+    padding: 2%;
+    border:#6369e3 5px solid
+}
+
+#sign-up{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+}
+
+/* ------------ registration-form end ------------ */

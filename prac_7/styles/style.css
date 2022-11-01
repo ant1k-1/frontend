@@ -1,0 +1,101 @@
+@import url(main-menu.css);
+@import url(burger-menu.css);
+@import url(notification-bell.css);
+@import url(gallery.css);
+@import url(buttons.css);
+@import url(registration-form.css);
+@import url(prompt.css);
+@import url(footer.css);
+@import url(cards1.css);
+@import url(cards2.css);
+
+.video-content{
+    display: none;
+}
+
+@media screen and (min-width: 720px){
+    .main-container > *,
+    .main-container > *::after,
+    .main-container > *::before{
+        flex: 0 0 auto;
+        max-width: auto;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 720px) {
+    /* ------------ layout begin ------------ */
+    .main-container > *,
+    .main-container > *::after,
+    .main-container > *::before{
+        flex: 0 0 100%;
+        max-width: 95%;
+        margin-bottom: 10px;
+    }
+    /* ------------ layout end ------------ */
+}
+
+/* ------------ layout begin ------------ */
+.main-container {
+    display: flex;
+    justify-content:space-around;
+    flex-flow: row wrap;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5 {
+    background: #fbe1d6;
+    border: 1px #6369e3 solid;
+    border-radius: 10px;
+    padding: 2%;
+}
+.item-1 {
+    width: 94.5%;
+}
+.item-2 {
+    width: 60%;
+}
+.item-3 {
+    width: 30%;
+}
+.item-4 {
+    width: 30%;
+}
+.item-5 {
+    width: 60%;
+}
+/* ------------ layout end ------------ */
+
+body{
+    background: #f6f1ef;
+}
+
+
+/* a:active{
+    color: rgb(255, 0, 0);
+} */
+
+main{
+    margin-top: 10px;
+}
+
+main section{
+    background: #fbe1d6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2%;
+    display: block;
+}
+
+.google_fonts{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#arrow_to_up{
+    height: 50px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    left: 100;
+    right: 0;
+    bottom: 0;
+    display: none;
+}

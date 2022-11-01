@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Галерея</title>
+    <title>Регистрация</title>
     <link rel="icon" type="image/png" href="images/favicon.png">  <!--использование фавиконки-->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,77 +104,55 @@
         </div>
         
     </header>
-        <img id="arrow_to_up" src="images/arrow_to_top.png" alt="UP">
+    
     <main>
-        <section class="gallery">
-            <h2 class="title__gallery">Gallery</h2>
-            <div class="gallery-list">
-                <a href="gallery/galaxy.jpg" class="gallery-item">
-                    <div class="gallery-item-hover">
-                        <div class="gallery-hover-content">
-                            <p>Галактика</p>
-                            <p class="gallery-hover-content-description">Lorem ipsum dolor sit ametdfsdf</p>
-                            <form action="https://ru.wikipedia.org/wiki/Заглавная_страница" target="_blank">
-                                <button class="gallery-hover-content-button">Подробнее</button>
-                            </form>
-                        </div>
-                    </div>
-                    <img src="gallery/galaxy.jpg" alt="alt">
-                </a>
-                <a href="gallery/hubble_telescope.jpg" class="gallery-item">
-                    <div class="gallery-item-hover">
-                        <div class="gallery-hover-content">
-                            <p>Хаббл</p>
-                            <p class="gallery-hover-content-description">Lorem ipsum dolor sit ametdfsdf</p>
-                            <form action="https://ru.wikipedia.org/wiki/Заглавная_страница" target="_blank">
-                                <button class="gallery-hover-content-button">Подробнее</button>
-                            </form>
-                        </div>
-                    </div>
-                    <img src="gallery/hubble_telescope.jpg" alt="alt">
-                </a>
-                <a href="gallery/image1coctestimage3.jpg" class="gallery-item">
-                    <div class="gallery-item-hover">Посмотреть</div>
-                    <img src="gallery/image1coctestimage3.jpg" alt="alt">
-                </a>
-                <a href="gallery/iss.webp" class="gallery-item">
-                    <div class="gallery-item-hover">Посмотреть</div>
-                    <img src="gallery/iss.webp" alt="alt">
-                </a>
-                <a href="gallery/iss_2.jpg" class="gallery-item">
-                    <div class="gallery-item-hover">Посмотреть</div>
-                    <img src="gallery/iss_2.jpg" alt="alt">
-                </a>
-                <a href="gallery/rocket_start.jpg" class="gallery-item">
-                    <div class="gallery-item-hover">Посмотреть</div>
-                    <img src="gallery/rocket_start.jpg" alt="alt">
-                </a>
-                <a href="gallery/soyuz.jpg" class="gallery-item">
-                    <div class="gallery-item-hover">Посмотреть</div>
-                    <img src="gallery/soyuz.jpg" alt="alt">
-                </a>
-                <a href="gallery/space_x.jpeg" class="gallery-item">
-                    <div class="gallery-item-hover">Посмотреть</div>
-                    <img src="gallery/space_x.jpeg" alt="alt">
-                </a>
-                <a href="gallery/tumannost.jpg" class="gallery-item">
-                    <div class="gallery-item-hover">Посмотреть</div>
-                    <img src="gallery/tumannost.jpg" alt="alt">
-                </a>
-                <a href="gallery/voyager_1.jpg" class="gallery-item">
-                    <div class="gallery-item-hover">Посмотреть</div>
-                    <img src="gallery/voyager_1.jpg" alt="alt">
-                </a>
-            </div>
-        </section>
-    </main>
+        <div class="main-container">
+            <img id="arrow_to_up" src="images/arrow_to_top.png" alt="UP">
 
+            <div class="sigh-up-form">
+                <span class="square1"></span>
+                <span class="square2"></span>
+                <form class="login_form" action="" method="get">
+                    <h1>Логин</h1>
+                    <label for="email"></label>
+                    <input class="my-input" type="email" name="email" id="email" required placeholder="Почта">
+                    
+                    <label for="password"></label>
+                    <input class="my-input" type="password" name="password" id="password" required placeholder="Пароль">
+                    <button type="submit">Войти</button>
+                    <div class="sign-help-div">
+                        <div class="sign-help">
+                            <p>Забыли пароль?</p>
+                            <a href="#">Восстановить</a>
+                        </div>
+                        <div class="sign-help">
+                            <p>Ещё нет аккаунта?</p>
+                            <a href="#">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
     <footer>
-        <address>
-            Для связи с автором: <br>
-            <a href="tel:+ 7(123)-456-78-90">Позвонить</a><br> <!--ссылка на телефон -->
-            <a href="malito: example_mail@mail.ru">Написать письмо</a><br> <!--ссылка на почту -->
-        </address>
+        <div class="social-media-links">
+            <a href="#" class="social-media-icon">
+                <img src="icons/vk-icon.png" alt="vk">
+            </a>
+            <a href="#" class="social-media-icon">
+                <img src="icons/tg-icon.png" alt="telegram">
+            </a>
+            <a href="#" class="social-media-icon">
+                <img src="icons/tt-icon.png" alt="tiktok">
+            </a>
+            <a href="#" class="social-media-icon">
+                <img src="icons/yt-icon.png" alt="youtube">
+            </a>
+            <a href="#" class="social-media-icon">
+                <img src="icons/inst-icon.png" alt="instagram">
+            </a>
+        </div>
     </footer>
+    
 </body>
 </html>

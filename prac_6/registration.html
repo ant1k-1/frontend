@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация</title>
     <link rel="icon" type="image/png" href="images/favicon.png">  <!--использование фавиконки-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400&display=swap" rel="stylesheet">
@@ -21,18 +21,45 @@
                         <a href="index.html" class="navbar-logo-text">SPACESHIPS</a>
                     </div>
                     
-                    <!-- <img src="images/favicon.png" alt="логотип сайта" id="logo"> -->
-                    <div class="navbar-wrap">
-                        <ul class="navbar-menu">
-                            <li><a href="/prac_5/index.html">Главная</a></li>
-                            <li><a href="/prac_5/registration.html">Регистрация</a></li>
-                            <li><a href="/prac_5/gallery.html">Галерея</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                    <div class="navbar-and-notify">
+                        <div class="navbar-wrap">
+                            <ul class="navbar-menu">
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="registration.html">Регистрация</a></li>
+                                <li><a href="gallery.html">Галерея</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="notification-bar">
+                            <div class="notification-box">
+                                <span class="notification-count"></span>
+                                <div class="notification-bell">
+                                    
+                                    <span class="bell-top"></span>
+                                    <span class="bell-middle"></span>
+                                    <span class="bell-bottom"></span>
+                                    <span class="bell-rad"></span>
+                                    
+                                    <input id="bell__toggle" type="checkbox" />
+                                    <label class="bell__btn" for="bell__toggle">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <ul class="bell_menu__box">
+                                <li><a class="bell__item" href="#">Уведомление</a></li>
+                                <li><a class="bell__item" href="#">Новости</a></li>
+                                <li><a class="bell__item" href="#">Блог</a></li>
+                                <li><a class="bell__item" href="#">Сообщение</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
+        
 
         <div class="burger-menu">
             <input id="menu__toggle" type="checkbox" />
@@ -40,76 +67,103 @@
             <span></span>
             </label>
             <div class="logo-and-text">
-                        <img src="images/favicon.png" alt="логотип сайта" class="navbar-logo">
-                        <a href="index.html" class="navbar-logo-text">SPACESHIPS</a>
+                <img src="images/favicon.png" alt="логотип сайта" class="navbar-logo">
+                <a href="index.html" class="navbar-logo-text">SPACESHIPS</a>
+            </div>
+            <div class="notification-bar">
+                <div class="notification-box">
+                    <span class="notification-count"></span>
+                    <div class="notification-bell">
+                        
+                        <span class="bell-top"></span>
+                        <span class="bell-middle"></span>
+                        <span class="bell-bottom"></span>
+                        <span class="bell-rad"></span>
+                        
+                        <input id="bell__toggle" type="checkbox" />
+                        <label class="bell__btn" for="bell__toggle">
+                            <span></span>
+                        </label>
                     </div>
+                </div>
+                
+                <ul class="bell_menu__box">
+                    <li><a class="bell__item" href="#">Уведомление</a></li>
+                    <li><a class="bell__item" href="#">Новости</a></li>
+                    <li><a class="bell__item" href="#">Блог</a></li>
+                    <li><a class="bell__item" href="#">Сообщение</a></li>
+                </ul>
+            </div>
             <ul class="menu__box">
-                <li><a class="menu__item" href="/prac_5/index.html">Главная</a></li>
-                <li><a class="menu__item" href="/prac_5/registration.html">Регистрация</a></li>
-                <li><a class="menu__item" href="/prac_5/gallery.html">Галерея</a></li>
-                <li><a class="menu__item" href="#">Контакты</a></li>
+                <li><a class="menu__item" href="index.html">Главная</a></li>
+                <li><a class="menu__item" href="registration.html">Регистрация</a></li>
+                <li><a class="menu__item" href="gallery.html">Галерея</a></li>
+                <li><a class="menu__item" href="contacts.html">Контакты</a></li>
             </ul>
+            
         </div>
         
     </header>
     
     <main>
         <img id="arrow_to_up" src="images/arrow_to_top.png" alt="UP">
-        <section id="sign-up">
-            <h1>Регистрация</h1>
-            <form id="login_form" action="" method="get">
-                <p>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" required placeholder="Имя">
-                </p>
-                <p>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required placeholder="Почта">
-                </p>
-                <p>
-                    <label for="password">Пароль</label>
-                    <input type="password" name="password" id="password" required placeholder="Пароль" pattern="[A-Za-z]">
-                </p>
-                <p>
-                    <label for="telephone">Телефон</label>
-                    <input type="tel" name="telephone" id="telephone" required placeholder="+71234567890">
-                </p>
-                <p>
-                    <label for="photo">Фото</label>
-                    <input type="file" name="photo" id="photo">
-                </p>
-                <p>
-                    <fieldset>
-                        <legend>Пол:</legend>
-                        <label for="male">Муж.</label>
-                        <input type="radio" name="sex" id="male">
-                        <label for="female">Жен.</label>
-                        <input type="radio" name="sex" id="female">
-                    </fieldset>
-                </p>
-                <p>
-                    <label for="news">Новостная рассылка</label>
-                    <input type="checkbox" name="news" id="news" checked>
-                </p>
-                <p>
-                    <label for="born">Дата Рождения</label>
-                    <input type="datetime-local" name="now" id="now">
-                </p>
-                <p>Расскажите о себе</p>
-                <p>
-                    <textarea name="info" id="info" cols="30" rows="10" placeholder="От 10 до 100 символов" required minlength="10" maxlength="100"></textarea>
-                </p>
-                <p>
-                    <label for="city">Выберите ваш город</label>
-                    <select name="city" id="city" multiple size="3">
-                        <option value="">--Не выбран--</option>
-                        <option value="moscow">Москва</option>
-                        <option value="petersburg">Санкт-Петербург</option>
-                    </select>
-                </p>
-                <button type="submit">Отправить</button>
-            </form>
-        </section> 
+        <div class="sigh-up-form">
+            <section id="sign-up">
+                <h1>Регистрация</h1>
+                <form id="login_form" action="" method="get">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required placeholder="Имя">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Почта">
+                    </p>
+                    <p>
+                        <label for="password">Пароль</label>
+                        <input type="password" name="password" id="password" required placeholder="Пароль" pattern="[A-Za-z]">
+                    </p>
+                    <p>
+                        <label for="telephone">Телефон</label>
+                        <input type="tel" name="telephone" id="telephone" required placeholder="+71234567890">
+                    </p>
+                    <p>
+                        <label for="photo">Фото</label>
+                        <input type="file" name="photo" id="photo">
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Пол:</legend>
+                            <label for="male">Муж.</label>
+                            <input type="radio" name="sex" id="male">
+                            <label for="female">Жен.</label>
+                            <input type="radio" name="sex" id="female">
+                        </fieldset>
+                    </p>
+                    <p>
+                        <label for="news">Новостная рассылка</label>
+                        <input type="checkbox" name="news" id="news" checked>
+                    </p>
+                    <p>
+                        <label for="born">Дата Рождения</label>
+                        <input type="datetime-local" name="now" id="now">
+                    </p>
+                    <p>Расскажите о себе</p>
+                    <p>
+                        <textarea name="info" id="info" cols="30" rows="10" placeholder="От 10 до 100 символов" required minlength="10" maxlength="100"></textarea>
+                    </p>
+                    <p>
+                        <label for="city">Выберите ваш город</label>
+                        <select name="city" id="city" multiple size="3">
+                            <option value="">--Не выбран--</option>
+                            <option value="moscow">Москва</option>
+                            <option value="petersburg">Санкт-Петербург</option>
+                        </select>
+                    </p>
+                    <button type="submit">Отправить</button>
+                </form>
+            </section> 
+        </div>
     </main>
     <footer>
         <address>
