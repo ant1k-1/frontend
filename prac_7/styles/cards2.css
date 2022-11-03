@@ -13,7 +13,7 @@
     width: 100%;
 }
 .cards2 {
-    filter: blur(0px);
+    filter: blur(10px);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -42,8 +42,6 @@
 .cards2:hover {
     transform: scale(1.1);
     transition: all ease .5s;
+    filter: blur(0px);
 } 
 
-.cards2_card1:hover .cards2_card2, .cards2_card3{
-    filter: blur(20px);
-}
