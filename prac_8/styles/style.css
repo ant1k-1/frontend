@@ -1,0 +1,110 @@
+@import url(footer.css);
+@import url(gallery.css);
+@import url(registration-form.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.nav,
+.header,
+.sidebar {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header,
+.navigation,
+.sidebar,
+.main,
+.ads{
+    padding: 10px;
+    border: red solid 3px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.header { 
+    grid-area: header;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.ads {
+    grid-area: ads;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+/* for desktops */
+@media (min-width: 1281px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "sidebar  navigation ads"
+        "sidebar main ads"
+        "footer footer footer";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+    }    
+}
+
+/* for tablets */
+@media (min-width: 768px) and (max-width: 1280px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "navigation navigation"
+        "sidebar main"
+        "ads footer";
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+    } 
+}
+
+/* for mobiles */
+@media (max-width: 767px) {
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "sidebar"
+        "ads"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr 1fr 1fr;
+    }
+}

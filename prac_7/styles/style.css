@@ -6,9 +6,9 @@
 @import url(registration-form.css);
 @import url(prompt.css);
 @import url(footer.css);
-@import url(cards1.css);
+/* @import url(cards1.css);
 @import url(cards2.css);
-@import url(cards3.css);
+@import url(cards3.css); */
 
 .video-content{
     display: none;
