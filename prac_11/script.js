@@ -14,7 +14,7 @@ addButton.addEventListener("click", event => {
     let block = document.createElement("div");
     block.classList.add("card");
     let title = document.createElement("h2");
-    title.classList.add("title", "title_h2");
+    title.classList.add("title");
     title.innerHTML = "Element " + count;
     array.push(title.innerHTML);
     block.append(title);
@@ -31,7 +31,7 @@ shiftButton.addEventListener("click", event => {
         let block = document.createElement("div");
         block.classList.add("card");
         let title = document.createElement("h2");
-        title.classList.add("title", "title_h2");
+        title.classList.add("title");
         title.innerHTML = el;
         block.append(title);
         containerArray.append(block);
@@ -51,7 +51,7 @@ replaceButton.addEventListener("click", event => {
         let block = document.createElement("div");
         block.classList.add("card");
         let title = document.createElement("h2");
-        title.classList.add("title", "title_h2");
+        title.classList.add("title");
         title.innerHTML = el;
         block.append(title);
         containerArray.append(block);
@@ -115,13 +115,12 @@ shuffleButton.addEventListener("click", event =>{
         list[i].innerHTML = array3[i];
     }
 });
-
 //task #4-5
 const notification = document.querySelector(".img__notification");
 const listNotification = document.querySelector(".text__notification");
 let counter = document.querySelector(".counter");
 
-function counterN(){
+function increaseCounter(){
     counter.style.opacity = 1;
     counter.innerHTML++;
     let el = document.createElement("li");
@@ -134,7 +133,7 @@ function counterN(){
 
 let timer = setTimeout(
     function tick(){
-        counterN();
+        increaseCounter();
         timer = setTimeout(tick, 3000);
     }, 3000);
 
@@ -149,7 +148,7 @@ notification.addEventListener("click", event => {
         counter.style.opacity = 0;
         timer = setTimeout(
             function tick(){
-                counterN();
+                increaseCounter();
                 timer = setTimeout(tick, 3000);
             }, 10000);
     }

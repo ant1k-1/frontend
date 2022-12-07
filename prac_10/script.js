@@ -48,7 +48,7 @@ function Accumulator(startingValue = 0){
     this.value = startingValue,
     this.read = function(){
         let sum = Number(prompt("Введите сумму: "));
-        if (isNaN(sum)) alert("Допускаются только числа!")
+        if (isNaN(sum))     alert("Допускаются только числа!")
         else this.value += sum;
         alert("Вы пожертвовали " + sum + " миска-рис");
     }
