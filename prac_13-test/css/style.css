@@ -1,0 +1,110 @@
+img {
+    width: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+
+#largeImg {
+    height: 500px;
+    width: auto;
+    padding: 5px;
+}
+
+#thumbs {
+    display: flex;
+}
+
+#thumbs a {
+    padding: 3px;
+    margin: 2px;
+}
+
+#thumbs li {
+    list-style: none;
+}
+
+#thumbs {
+    margin: 0;
+    padding: 0;
+}
+
+.selected {
+    background: #0f0;
+}
+
+li {
+    cursor: pointer;
+}
+
+
+.slider {
+    border-radius: 5px;
+    background: #E0E0E0;
+    width: 310px;
+    height: 15px;
+    margin: 5px;
+}
+
+.thumb {
+    width: 10px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+    background: red;
+    cursor: pointer;
+}
+
+
+#myFigure {
+    height: 500px;
+    margin: 10%;
+    background-color: blue;
+}
+
+.scroll_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    background-size: 100%;
+}
+
+.scroll_text {
+    padding: 5px;
+    margin-left: 5rem;
+    margin-top: 40rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.scroll_title {
+    text-align: left;
+    margin-bottom: 1em;
+    font-size: 3em;
+    transform: translate(0px, 130%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.scroll_info {
+    transform: translate(0px, 130%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+    line-height: 1.5;
+}
+
+.scroll_title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.scroll_info._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}

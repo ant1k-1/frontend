@@ -1,10 +1,11 @@
 /* ------------ main-menu begin ------------ */
 header{
-    position:sticky;
+    position:fixed;
 	top: 0%;
     /* background: #efe5f5; */
     background: #e7d1f4;
     z-index: 100;
+    width: 100%;
 }
 
 .navbar {

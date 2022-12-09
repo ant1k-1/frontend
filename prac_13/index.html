@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Practice 13</title>
+</head>
+<body>
+    <header>
+        <div class="header" id="header">
+            <div class="logo">
+                <img id="logoImg" src="img/favicon.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container taks11" id="contents">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Iusto consectet. <a href="https://ya.ru/">Искать</a> nemo perspiciatis nihil quas delectus adipisci.
+            </p>
+            <ul>
+                <li>Lorem loren lorem <a href="https://www.google.ru/">Искать</a> Lorem ipsum dolor sit, at quia pasoluta quidem samque?</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="gallery">
+                <img src="img/galaxy.jpg" alt="" id="mainPic">
+                <div id="gallery_smalls">
+                    <div class="gallery-item">
+                        <img src="img/galaxy.jpg" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/iss.webp" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/image1coctestimage3.jpg" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/iss_2.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul id="list">
+                <li>File 1</li>
+                <li>File 2</li>
+                <li>File 3</li>
+                <li>File 4</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="slider">
+                <div class="slider__thumb"></div>
+            </div>
+        </div>
+
+        <div class="container task5">
+            <span id="counter">Cost: 0</span>
+            <div class="dragPlace" ondrop="drop(event)" ondragover="DragAndDrop(event)"></div>
+            <div class="holdPlace">
+                <img id="img1" src="img/galaxy.jpg" alt="" draggable="true" ondragstart="drag(event)">
+                <img id="img2" src="img/iss.webp" alt="" draggable="true" ondragstart="drag(event)">
+                <img id="img3" src="img/image1coctestimage3.jpg" alt="" draggable="true" ondragstart="drag(event)">
+                <img id="img4" src="img/iss_2.jpg" alt="" draggable="true" ondragstart="drag(event)">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="card">
+                <h2 class="title">Заголовок</h2>
+                <p class="decription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis vero cum in ipsum
+                    tempore voluptatibus cupiditate nobis, amet ipsa, praesentium minus aperiam, sint officia dolores
+                    quo accusantium perferendis eos cumque.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
